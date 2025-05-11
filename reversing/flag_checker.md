@@ -38,7 +38,7 @@ flag를 찾으면 될것 같다.
 
 ```sub_127A()``` 함수는 입력된 s를 받아 검증하는 함수인 것 같다. true를 반환하면 "Correct!", 아니면 "Incorrect!"를 출력한다.
 
-```sub_127A()``` 함수가 주요한것 같다.
+```sub_127A()``` 함수가 중요한것 같다.
 
 ![image](https://github.com/user-attachments/assets/709c75cf-0eda-462b-af3e-35024f686abc)
 

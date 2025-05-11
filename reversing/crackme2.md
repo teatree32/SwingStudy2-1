@@ -4,7 +4,7 @@
         <link rel="stylesheet" type="text/css" href="sytle.css">
 </head>
 <body>
-        <h1>[2025 SWING Reversing Study] crackme Write-Up</h1>
+        <h1>[2025 SWING Reversing Study] crackme2 Write-Up</h1>
 </body>
 <br>
 <br>

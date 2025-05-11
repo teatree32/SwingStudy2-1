@@ -81,6 +81,7 @@ input[i] = (result - i) ^ 0x5A;
 
 ```
 #exploit.py
+
 def ror3(byte):
     return ((byte >> 3) | ((byte & 0x7) << 5)) & 0xFF
 

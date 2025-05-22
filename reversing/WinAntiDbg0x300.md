@@ -26,7 +26,7 @@ start 함수밖에 안 뜬다.
 
 ![image](https://github.com/user-attachments/assets/e0e8d2af-6bbb-43dc-8613-b9f424503a09)
 
-도저히 모르겠어서 좀 찾아봤다. 
+도저히 모르겠어서 구글링해봤다.
 
 exe 파일이 UPX로 압축되어 있어서 그런거라고 한다.
 

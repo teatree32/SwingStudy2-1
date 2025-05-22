@@ -50,7 +50,7 @@ kali에서 UPX 압축 풀면된다.
 
 ![image](https://github.com/user-attachments/assets/bb5281e1-9125-4bfa-8a1b-d2a8bd34ad88)
 
-그렇다면 ```jz``` 명령문에서 점프하는 주소를 바꾸면 될것 같다.
+자세한건 더이상 잘 모르겠어서 flag가 출력되는 부분을 찾아보기로 했다.
 
 다시 문자열이 보이는 곳에서 flag 관련 문자열이 있는지 찾아 보았다.
 
@@ -60,8 +60,28 @@ kali에서 UPX 압축 풀면된다.
 
 ![image](https://github.com/user-attachments/assets/fb856f95-15c8-40e2-92d0-f5656b43673e)
 
-다시 ```jz``` 명령어로 돌아와 아래 사진처럼 코드를 바꿔준다.
+해당 부분에서 위로 올라가보면 아래와 같이 나온다.
 
-![image](https://github.com/user-attachments/assets/24e13bc3-8fe8-49df-8d84-580909ee0ae8)
+![image](https://github.com/user-attachments/assets/21125dc6-0f96-485c-b895-d45e7c8827b7)
 
+전체적으로 흐름만 보면 빨간박스 부분에서 왼쪽으로 가면 지속적으로 디버거를 확인하는 루프에 들어가 디버가가 있으면 프로그램을 종료하는 것 같다. 
 
+오른쪽으로 가면 파란 박스를 기준으로 분기해서 flag가 나오는 것 같다.
+
+일단 루프문에 빠지지 않고 실행되는게 중요한 것 같으니 프로그램이 시작될 때 ```jz``` 명령어가 아니라 ```jmp``` 명령어를 써서 플래그에 상관없이 무조건 오른쪽으로 진행되도록 바꿔보면 어떨까 싶다.
+
+Edit - Patch program - Assemble 을 통해 ```jz``` 명령어를 ```jmp``` 명령어로 바꿨다.
+
+![image](https://github.com/user-attachments/assets/0a4469fc-be57-4e3c-9785-13fd26f9fb72)
+
+그러면 아래와 같이 실행 흐름이 바뀌게 된다.
+
+![image](https://github.com/user-attachments/assets/4745c3ea-72f2-4fb1-bd51-b3025b430e9d)
+
+Edit - Patch program - Apply patches to input file 로 path한거 저장후 실행해보자
+
+![image](https://github.com/user-attachments/assets/d8434f4b-c5de-446f-ad3c-d46198ed138e)
+
+flag가 나왔다!!
+
+picoCTF[Wind0ws_antid3bg_0x300_86fcf897}

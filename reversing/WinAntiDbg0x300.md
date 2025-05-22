@@ -56,7 +56,7 @@ kali에서 UPX 압축 풀면된다.
 
 ![image](https://github.com/user-attachments/assets/95c84fca-0a80-41db-9aca-93be9969d48e)
 
-찾았다 해당 부분에서 플래그를 출력한다. 호출되는 부분을 살펴보면 ```loc_403929```로 호출된다.
+찾았다 해당 부분에서 플래그를 출력한다. 
 
 ![image](https://github.com/user-attachments/assets/fb856f95-15c8-40e2-92d0-f5656b43673e)
 

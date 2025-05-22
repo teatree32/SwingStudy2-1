@@ -67,7 +67,7 @@ for (let a = 800101; a <= 991231; a++){
 }
 ```
 
-일단 80년도부터 2000년 전까지 돌려보자
+일단 1980년도부터 2000년 전까지 돌려보자
 
 ![image](https://github.com/user-attachments/assets/8b830d38-5bc0-41c0-bfa2-50df66e71712)
 
